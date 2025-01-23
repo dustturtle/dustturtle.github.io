@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    background: #1a1a1a;
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.game-container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    background: #2d2d2d;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+#game-board {
+    border: 2px solid #4a4a4a;
+    background: #000;
+}
+
+.score-board {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#game-over {
+    color: #ff4444;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+/* 方块颜色 */
+.tetromino.I { background: #00f0f0; }
+.tetromino.O { background: #f0f000; }
+.tetromino.T { background: #a000f0; }
+.tetromino.S { background: #00f000; }
+.tetromino.Z { background: #f00000; }
+.tetromino.J { background: #0000f0; }
+.tetromino.L { background: #f0a000; }
+
+@media (max-width: 600px) {
+    .game-container {
+        flex-direction: column;
+        padding: 10px;
+    }
+    
+    #game-board {
+        width: 240px;
+        height: 480px;
+    }
+}

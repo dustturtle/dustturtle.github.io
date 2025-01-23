@@ -1,10 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
-    <title>My GitHub Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>俄罗斯方块</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Welcome to My GitHub Page</h1>
-    <p>This is my personal homepage hosted on GitHub Pages!</p>
+    <div class="game-container">
+        <canvas id="game-board" width="300" height="600"></canvas>
+        <div class="score-board">
+            <h2>得分：<span id="score">0</span></h2>
+            <p id="game-over" style="display:none;">游戏结束！按R键重玩</p>
+            <div class="instructions">
+                <h3>操作说明</h3>
+                <p>← A 键：左移</p>
+                <p>→ D 键：右移</p>
+                <p>↓ S 键：加速下落</p>
+                <p>↑ W 键：旋转方块</p>
+                <br>
+                <p>版权所有：</p>
+                <p>QCStudio & DeepSeek</p>
+            </div>
+    </div>
+    <script src="game.js"></script>
 </body>
 </html>
